@@ -18,7 +18,7 @@ public class UI : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && canRestart)
+        if(Input.touchCount > 0 && canRestart)
         {
             SceneManager.LoadScene(0);
         }
